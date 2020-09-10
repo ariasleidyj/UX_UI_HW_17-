@@ -1,0 +1,143 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(208,203,161);
+    background: linear-gradient(90deg, rgba(208,203,161,1) 0%, rgba(208,203,161,0) 100%);
+  }
+ 
+
+    .logo { 
+    width: 30%; 
+    padding: 1%; 
+    text-align:center;
+}
+
+
+    .left, .center {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .left {
+        width: 25%;
+      }
+      .center {
+        width: 50%;
+      } 
+  /* Work Grid CSS */
+  
+  /* .subHeading {
+    text-align: left; 
+    border-bottom: 2px, solid black;
+    width : 300px;
+    margin : 50px auto;
+  }*/
+  
+  #workGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "dcMetro doiRedesign"
+    "travelApp projectFour";  
+  }
+  
+  #dcMetro {
+    grid-area: dcMetro;
+    background-image: url("../images/dcMetroPortfolio.png");   
+  
+  }
+  #doiRedesign {
+    grid-area: doiRedesign;
+    background-image: url("../images/doiRedesignPortfolio.png");  
+  }
+  
+  #travelApp {
+    grid-area: travelApp;
+    background-image: url("../images/AllInOneTravel.png"); 
+  }
+  
+  #projectFour {
+    grid-area: projectFour;
+    background-image: url("../images/Project4.png");
+  }
+  
+  .workGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+  
+  .heading {
+    background-color: #D0CBA1; 
+    padding: 15px;
+    height: 25px;
+    color: white;
+    font-size: 18px;
+    border-bottom: 5px solid  rgba(0,0,0,0.7);
+  }
+  
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+  }
+  #navBar h1 {
+    width: 25%;
+    font-weight: 500;
+  }
+  #navigation {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .highlight {
+    color: #FF6200;
+    font-weight: 700;
+  }
+  
+  /* Typography CSS */
+
+  h1{ 
+      font-style: italic;
+      color: #240404;
+  }
+  
+  h2 {
+    font-size: 40px;
+    margin: 0px 0px;
+    color: #030303;
+  }
+  
+  h3 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0px 0px;
+    color:  #D0CBA1; 
+  }
+  
+  h4 {
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  
+  
+  #headline p {
+    max-width: 350px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px 0px;
+    color: #636364;} 
