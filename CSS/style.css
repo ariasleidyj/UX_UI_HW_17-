@@ -1,30 +1,51 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: rgb(208,203,161);
-    background: linear-gradient(90deg, rgba(208,203,161,1) 0%, rgba(208,203,161,0) 100%);
+   /*  background: rgb(208,203,161);
+    background: linear-gradient(90deg, rgba(208,203,161,1) 0%, rgba(208,203,161,0) 100%);  */
   }
  
 
-    .logo { 
-    width: 30%; 
+.logo { 
+    width: 21%; 
     padding: 1%; 
-    text-align:center;
+}
+.left, .center, .right {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.left, .right {
+  width: 25%;
+}
+.center {
+  width: 50%;
+}
 
-    .left, .center {
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+.inline-blockandlogo{ 
+  display: flex;
+  padding: 20px;
+}
 
-      .left {
-        width: 25%;
-      }
-      .center {
-        width: 50%;
-      } 
+.leidy {
+  border-radius: 45%; 
+  padding: 30px; 
+}
+}
+.heroImg {
+  height: 400px; 
+ 
+}
+
+p{ 
+  padding: 5 px; 
+}
+.contentLeidy { 
+  width: 500px; 
+  content: left;
+  padding: 5 5 5 5; 
+}
   /* Work Grid CSS */
   
   /* .subHeading {
@@ -37,7 +58,7 @@ body {
   #workGrid {
     margin: 0px 5%;
     display: grid;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 400px 400px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "dcMetro doiRedesign"
@@ -76,43 +97,49 @@ body {
   
   .heading {
     background-color: #D0CBA1; 
-    padding: 15px;
+    padding: 2px;
     height: 25px;
     color: white;
     font-size: 18px;
     border-bottom: 5px solid  rgba(0,0,0,0.7);
   }
   
-  #navBar {
-    display: flex;
-    flex-direction: row;
-    margin: 0px 5%;
+  #description{ 
+    padding-left: 15px;
   }
-  #navBar h1 {
-    width: 25%;
-    font-weight: 500;
-  }
-  #navigation {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  #navigation p {
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
+/* Footer CSS */
+footer { 
+  background-color: #8c8c8de1; 
+  padding: 20px; 
+
+}
+.footerUl{ 
+  display:inline-block; 
+  vertical-align: top; 
+}
+
+.inline-block{ 
+  vertical-align: top;
+  display: inline-block; 
+}
+li {
+  padding: 15px; 
+}
+  /*
   .highlight {
     color: #FF6200;
-    font-weight: 700;
+    font-weight: 700; */
   }
   
   /* Typography CSS */
 
   h1{ 
-      font-style: italic;
       color: #240404;
+      font-weight: 100;
+      text-align: left; 
+      border-bottom: 2px, solid black;
+      width : 300px;
+      margin : 50px auto;
   }
   
   h2 {
@@ -122,7 +149,7 @@ body {
   }
   
   h3 {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 300;
     margin: 0px 0px;
     color:  #D0CBA1; 
