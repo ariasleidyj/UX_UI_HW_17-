@@ -64,6 +64,10 @@ p{
     "dcMetro doiRedesign"
     "travelApp projectFour";  
   }
+
+  url:hover {
+    opacity: 0.5;
+  }
   
   #dcMetro {
     grid-area: dcMetro;
@@ -75,6 +79,7 @@ p{
     background-image: url("../images/doiRedesignPortfolio.png");  
   }
   
+
   #travelApp {
     grid-area: travelApp;
     background-image: url("../images/AllInOneTravel.png"); 
@@ -125,6 +130,8 @@ footer {
 li {
   padding: 15px; 
 }
+
+
   /*
   .highlight {
     color: #FF6200;
